@@ -1,0 +1,95 @@
+:root {
+  font-family: "Maven Pro", sans-serif;
+  color: #dfdfdf;
+}
+
+body {
+  background-color: #3C4245;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main-banner {
+  display: block;
+  width: 100%;
+  max-height: 70vh;
+  height: 70vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.main-logo {
+  width: 150px;
+  opacity: 0.8;
+}
+
+.gradient {
+  width: 100%;
+  background-image: linear-gradient(to top, #3C4245, transparent);
+  height: 70vh;
+  display: flex;
+  margin-top: -70vh;
+  position: relative;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.gradient span {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.coming {
+  font-weight: normal;
+  letter-spacing: 6px;
+  text-align: center;
+}
+
+.social-section {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+}
+
+.social-icon {
+  width: 30px;
+}
+
+.social-link {
+  display: block;
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+.social-link:hover .social-icon {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+}
+
+.loadash {
+  animation: dash 2s infinite normal;
+}
+
+.smart {
+  font-size: 20px;
+}
+
+@keyframes dash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
